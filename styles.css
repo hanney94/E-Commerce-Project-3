@@ -5,6 +5,7 @@
   font-family: 'Kumbh Sans', sans-serif;
 
 }
+/*
 
 .flex-container {
     display: flex;
@@ -14,6 +15,7 @@
     flex-wrap: wrap;
 }
 
+*/
 
 
 #nav {
@@ -26,15 +28,17 @@
 }
 
 .nav-link {
-    color: #b6bcc8;
     font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
 }
 
+/*
 .nav-link-women {
     text-decoration: none;
     border-bottom: 3px solid orange;
     color: black;
 }
+*/
 
 .nav-item-right{
    float:right;
@@ -50,17 +54,21 @@
 }
 
 #avatar {
-    width:2.5rem;
-    float: right;
+    width:1.9rem;
+    padding-left:10%;
+}
+
+#content {
+    flex: 50%;
 }
 
 #product {
-    width:375px;
-    height: 340px;
+    width:100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 #info { 
-    height: 800px;
     flex: 50%;
     padding: 20px;
 }
@@ -82,32 +90,46 @@
     font-size: 15px;
 }
 
+.price-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
 #price {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
 
 #discount {
+    width: 60px;
     font-weight: bold;
-    float: right;
-        padding: 5px 10px 5px 10px;        
+     padding: 5px 10px 5px 10px;        
     border-radius: 5px;
     color: #ff7d1a;
     background-color: #ffede0;
 }
 
+#scored {
+    color: #b6bcc8;
+    
+}
+
+.quantity {
+background-color: #f7f8fd;
+border-radius: 8px;
+align-content: center;
+
+}
 
 /*
-#avatar {
-    width:50px;
-    padding-left: 10%;
-}
-
-#cart {
-    justify-content: center;
-    margin-top: 60%;
-}
 
 #content {
     height: 800px;

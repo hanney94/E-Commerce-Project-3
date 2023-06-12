@@ -24,57 +24,69 @@
   <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <img src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/icon-menu.svg">
   </button>
-  <span class="navbar-brand me-auto"> <img id ="logo" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/logo.svg"></span>
+   <span class="navbar-brand me-auto"> <img id ="logo" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/logo.svg"></span>
+   <div class="right-icons">
+  <img id="cart" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/icon-cart.svg">
+<img id="avatar" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/image-avatar.png">
+ </div>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Collections</a>
+        <a class="nav-link" href="#">Collections</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Men</a>
+        <a class="nav-link" href="#">Men</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link-women active" href="#">Women</a>
+        <a class="nav-link" href="#">Women</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link disabled" href="#">About</a>
+        <a class="nav-link " href="#">About</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link disabled" href="#">Contact</a>
+        <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
   </div>
 </div>
 </nav>
 </div>
+ 
 
 
 <div class="flex-container">
     <div id="content"><img id ="product" src="/Users/hannahallan/Documents/GitHub/Project-3/images/image-product-1.jpg"></div>
-
-
     <div id="info">
       <p id="company"> SNEAKER COMPANY </p>
       <h1 id="heading"> Fall Limited Edition Sneakers </h1>
       <p id="para"> These low-profile sneakers are your perfect casual wear companion. Featuring a 
   durable rubber outer sole, they’ll withstand everything the weather can offer. </p>
+  <div class="price-container">
+    <div class="price-wrapper">
   <p id="price">$125.00</p>
   <p id="discount">50%</p>
+</div>
+  <p id="scored"> <s>$250.00</s></p>
+</div>
+
+<div class="quantity">
+ <form id='myform' method='POST' class='quantity' action='#'>
+  <input type='button' value='-' class='qtyminus minus' field='quantity' />
+  <input type='text' name='quantity' value='0' class='qty' />
+  <input type='button' value='+' class='qtyplus plus' field='quantity' />
+</form>
+</div>
+
+<div class="add">
+  add
+</div>
+
+</div>
+
+  <div id="footer">Footer</div>
       
-
-
-
-
-
-
     </div>
 
-
-
-
-    <!--
-   <div id="footer">Footer</div>
- -->
 
 </body>
 

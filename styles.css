@@ -109,9 +109,7 @@
 }
 
 #discount {
-    width: 60px;
-    font-weight: bold;
-     padding: 5px 10px 5px 10px;        
+    font-weight: bold;       
     border-radius: 5px;
     color: #ff7d1a;
     background-color: #ffede0;
@@ -127,6 +125,27 @@ background-color: #f7f8fd;
 border-radius: 8px;
 align-content: center;
 
+}
+
+.add{
+    margin-top: 10%;
+}
+
+
+.addtocart{
+    color: white;
+  padding:15px;
+  font-size: 15px;
+  border-radius:10px;
+  border:none;
+  background:#ff7d1a;
+  cursor:pointer;
+  width:340px;
+ }
+
+.cartadd {
+    margin-right: 10px;
+    width:17px;
 }
 
 /*

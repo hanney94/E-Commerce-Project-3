@@ -5,7 +5,7 @@
   font-family: 'Kumbh Sans', sans-serif;
 
 }
-/*
+
 
 .flex-container {
     display: flex;
@@ -15,7 +15,6 @@
     flex-wrap: wrap;
 }
 
-*/
 
 
 #nav {
@@ -32,13 +31,6 @@
     font-weight: bold;
 }
 
-/*
-.nav-link-women {
-    text-decoration: none;
-    border-bottom: 3px solid orange;
-    color: black;
-}
-*/
 
 .nav-item-right{
    float:right;
@@ -98,6 +90,7 @@
 
 .price-wrapper {
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     gap: 1rem;
 }
@@ -108,31 +101,51 @@
     letter-spacing: 1.5px;
 }
 
+
 #discount {
+    width: 50px;
     font-weight: bold;       
     border-radius: 5px;
     color: #ff7d1a;
     background-color: #ffede0;
+    text-align: center;
 }
 
-#scored {
+
+
+.scored {
     color: #b6bcc8;
+    text-align: center;
+    margin-top: 8px;
     
 }
 
-.quantity {
-background-color: #f7f8fd;
-border-radius: 8px;
-align-content: center;
-
+#myform {
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    background-color: #f7f8fd;
+    height: 50px;
 }
 
-.add{
-    margin-top: 10%;
+input[type="text"] { 
+    border:none;
 }
 
+input[type="button"] {
+    border: none;
+    color:#ff7d1a;
+    background-color:#f7f8fd;
+}
+
+.qty {
+    text-decoration: none;
+    background-color:#f7f8fd;
+    text-align: center;
+}
 
 .addtocart{
+    margin-top: 10%;
     color: white;
   padding:15px;
   font-size: 15px;
@@ -148,28 +161,5 @@ align-content: center;
     width:17px;
 }
 
-/*
 
-#content {
-    height: 800px;
-    flex:50%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-#product {
-    width: 375px;
-    margin-left: 200px;
-    margin-top: 150px;
-    border-radius: 15px;
-
-}
-
-#info { 
-    height: 800px;
-    flex: 50%;
-    background-color: pink;
-    padding: 20px;
-}
 

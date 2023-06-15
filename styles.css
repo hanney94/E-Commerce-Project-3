@@ -117,6 +117,7 @@
     color: #b6bcc8;
     text-align: center;
     margin-top: 8px;
+    font-weight: 700;
     
 }
 
@@ -145,10 +146,11 @@ input[type="button"] {
 }
 
 .addtocart{
-    margin-top: 10%;
-    color: white;
+  margin-top: 10%;
+  color: #ffede0;
   padding:15px;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 700;
   border-radius:10px;
   border:none;
   background:#ff7d1a;
@@ -161,5 +163,8 @@ input[type="button"] {
     width:17px;
 }
 
+.svg {
+    fill: white;
+}
 
 

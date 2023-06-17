@@ -159,13 +159,9 @@ input[type="button"] {
   width:340px;
  }
 
-.cartadd {
-    margin-right: 10px;
-    width:17px;
-}
 
-.svg {
-    fill: white;
+svg {
+    margin-right: 10px;
 }
 
 

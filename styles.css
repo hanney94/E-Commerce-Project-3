@@ -132,28 +132,48 @@
     
 }
 
-#myform {
-    text-align: center;
-    padding:10px;
-    border-radius: 10px;
+.myform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border-radius: 10px;
     background-color: #f7f8fd;
     height: 50px;
 }
 
-input[type="text"] { 
-    border:none;
+.myform span {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
 }
 
-input[type="button"] {
-    border: none;
-    color:#ff7d1a;
-    background-color:#f7f8fd;
+.myform span.num{
+    font-size: 17px;
 }
+
+.myform span.minus{
+    color:#ff7d1a;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.myform span.plus{
+    color:#ff7d1a;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
 
 .qty {
     text-decoration: none;
     background-color:#f7f8fd;
     text-align: center;
+}
+
+.qtyplus.plus {
+    cursor: pointer;
 }
 
 .addtocart{

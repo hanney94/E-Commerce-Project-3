@@ -59,7 +59,7 @@
 
 #content {
     flex: 50%;
-    position: static;
+    position: relative;
     z-index: 1;
 }
 
@@ -167,6 +167,7 @@ input[type="button"] {
   background:#ff7d1a;
   cursor:pointer;
   width:340px;
+  cursor: pointer;
  }
 
 
@@ -176,10 +177,10 @@ svg {
 
 .cart-empty {
     width: 350px;
-    height: 200px;
-    background-color: white;
+    height: 250px;
+    background-color: pink;
     border-radius: 10px;
-    position: static;
+    position: absolute;
     z-index: 2;
 }
 
@@ -188,13 +189,14 @@ svg {
     font-size: 15px;
     font-weight: 700;
     border-bottom: 1px solid #b6bcc8;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 .yourCart {
-    height: 150px;
-    padding: 60px;
+    padding :60px;
+    padding-bottom: 60px;
     color: #68707d;
     font-weight: 700;
     font-size: 15px;

@@ -1,8 +1,14 @@
 //* Your Cart is Empty DIV
 
 let cartEmpty = document.querySelector(".cart-empty");
+let addToCart = document.querySelector(".add");
+let productsInCart = [];
 
-function showEmpty  (){
+
+
+
+
+function showEmpty (){
 	cartEmpty.classList.toggle("hide");
 }
 
@@ -14,7 +20,6 @@ function showEmpty  (){
    num = document.querySelector(".num");
 
    let a = 0
-
    plus.addEventListener("click", ()=> {
    	a++;
    	num.innerText=a;
@@ -28,3 +33,14 @@ function showEmpty  (){
    	console.log(a);
    	}
    });
+
+    //* Add to Cart
+
+
+
+   
+
+
+
+
+

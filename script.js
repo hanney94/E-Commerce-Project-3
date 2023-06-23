@@ -1,46 +1,26 @@
-//* Your Cart is Empty DIV
-
-let cartEmpty = document.querySelector(".cart-empty");
-let addToCart = document.querySelector(".add");
-let productsInCart = [];
+"use strict"
 
 
 
+const cartList = document.getElementById("cartfull");
+const cartbtn = document.getElementById("cartbutton");
 
 
-function showEmpty (){
-	cartEmpty.classList.toggle("hide");
-}
+// counter
 
-//* Increase & Decrease Quantity 
-
-
-   const plus = document.querySelector(".plus"),
-   minus = document.querySelector(".minus"),
-   num = document.querySelector(".num");
-
-   let a = 0
-   plus.addEventListener("click", ()=> {
-   	a++;
-   	num.innerText=a;
-   	console.log(a);
-   });
-
-    minus.addEventListener("click", ()=> {
-   	if (a > 0) {
-   	a--;
-   	num.innerText=a;
-   	console.log(a);
-   	}
-   });
-
-    //* Add to Cart
+const counterRender = document.getElementById("num-disp");
+const minusBtn = document.getElementById("minus");
+const plusBtn = document.getElementById("plus");
 
 
+const cartNumRender = document.getElementById("cartnum");
+const cartTotalRender = document.getElementById("carttotal");
+const addToCartBtn = document.getElementById("addcart");
 
-   
-
-
-
-
+let cartBadge = document.getElementById("badge");
+let isCartEmpty = true;
+let cartToggle = false;
+let isCartOpen = false;
+let cartFull = document.getElementById("cart-full");
+let cartEmpty = document.getElementById("cart-empty");
 

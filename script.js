@@ -81,9 +81,15 @@ const showBadge = () => {
 };
 
 
+const updateCart = () => {
+	if (isCartEmpty == false){
+		cartFull.style.display="block";
+		cartBadge.style.display = "none";
+	} else {
+		cartFull.style.display ="none";
+		cartEmpty.style.display = "flex";
+	}
+};
 
+showBadge ();
 
-
-
-
-}

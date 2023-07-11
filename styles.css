@@ -202,6 +202,7 @@ svg {
     border-radius: 10px;
     position: absolute;
     z-index: 2;
+    display: none;
 }
 
 .cart-full {
@@ -212,6 +213,7 @@ svg {
     position: absolute;
     z-index: 3;
     justify-content: space-between;
+    display: none;
 }
 
 .cartinfo-container {

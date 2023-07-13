@@ -1,6 +1,6 @@
 
 
-const cartList = document.getElementById("cartfull");
+const cartList = document.getElementById("cartlist");
 const cartbtn = document.getElementById("cartbutton");
 
 
@@ -19,8 +19,17 @@ let cartBadge = document.getElementById("badge");
 let isCartEmpty = true;
 let cartToggle = false;
 let isCartOpen = false;
-let cartFull = document.getElementById("cart-full");
+let cartFull = document.getElementById("cartlist");
 let cartEmpty = document.getElementById("cart-empty");
+
+
+const handleClickOutside = (e) => {
+  if (e.target !== cartbtn && !cartList.contains(e.target)) {
+    cartList.style.display = "none";
+    window.removeEventListener("click", handleClickOutside);
+    isCartOpen = false;
+  }
+};
 
 const showCart = () => {
 	cartToggle = true;
@@ -92,4 +101,22 @@ const updateCart = () => {
 };
 
 showBadge ();
+
+
+let count = 0;
+plusBtn.addEventListener("click", () => {
+	count++;
+	counterRender.innerHTML= count.toString();
+	cartNumRender.innerHTML = count.toString ();
+	cartTotalRender.innerHTML = '$${(125 * count).toFixed(2)}';
+});
+
+minusBtn.addEventListener("click", () => {
+	if (count === 0) return;
+	count--;
+	counterRender.innerHTML = count.toString();
+	cartNumRender.innerHTML = count.toString();
+	cartTotalRender.innerHTML = '$${(125 * count).toFixed(2)}';
+});
+
 

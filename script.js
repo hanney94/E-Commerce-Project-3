@@ -19,8 +19,8 @@ let cartBadge = document.getElementById("badge");
 let isCartEmpty = true;
 let cartToggle = false;
 let isCartOpen = false;
-let cartFull = document.getElementById("cartlist");
-let cartEmpty = document.getElementById("cart-empty");
+let cartFull = document.getElementById("cartbask");
+let cartEmpty = document.getElementById("carte");
 
 
 const handleClickOutside = (e) => {
@@ -71,7 +71,6 @@ addToCartBtn.addEventListener("click", (e) => {
 
 const removeItem = () => {
 	isCartEmpty = true;
-
 	count = 0;
 	counterRender.innerHTML = count.toString();
 	showBadge();
@@ -107,7 +106,7 @@ let count = 0;
 plusBtn.addEventListener("click", () => {
 	count++;
 	counterRender.innerHTML= count.toString();
-	cartNumRender.innerHTML = count.toString ();
+	cartNumRender.innerHTML = count.toString();
 	cartTotalRender.innerHTML = '$${(125 * count).toFixed(2)}';
 });
 

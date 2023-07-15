@@ -195,17 +195,16 @@ svg {
     margin-right: 10px;
 }
 
-.cart-empty {
+#carte {
     width: 350px;
     height: 250px;
     background-color:white;
     border-radius: 10px;
     position: absolute;
     z-index: 2;
-    display: none;
 }
 
-.cart-full {
+.cartbask{
     width: 350px;
     height: 250px;
     background-color: white;
@@ -213,17 +212,9 @@ svg {
     position: absolute;
     z-index: 3;
     justify-content: space-between;
-    display: none;
 }
 
-.cartinfo-container {
-    display: flex;
-    padding: 15px;
-    align-items: center;
-    height: 100px;
-    justify-content: flex-start;
-    gap: 2rem;
-}
+
 
 #carttn {
     display: flex;
@@ -286,7 +277,9 @@ svg {
     margin-left: 40px;
 }
 
-
+#bin {
+    cursor: pointer;
+}
 
 
 @media screen and (min-width: 768px) {

@@ -29,44 +29,7 @@
   </button>
    <span class="navbar-brand me-auto"> <img id ="logo" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/logo.svg"></span>
 
-   <div class="right-icons">
-    <div class="cart" id="cartbadge">
-  <button id="cartbutton">
-  <img id="cart" src="/Users/hannahallan/Downloads/ecommerce-product-page-main/images/icon-cart.svg">
-  <span class="badge" id="badge">4</span>
-</button>
-
-<div class="cart-full" id="cartlist" style="display: none;">
-  <div class="pCart">
-    <p>Cart</p>
-  </div>
-    <div class="cartinfo-container">
-      <div class="cartdesc">
-      <img id="carttn" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/image-product-1-thumbnail.jpg">
-      <p id="autumn">Autumn Limited Edition...</p>
-      <div class="itmeprice"> $125.00 x <span class="num" id="cartnum">1</span>
-        <span class="total" id="carttotal">$125.00</span></div>
-      </div>
-      <img id="bin" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-delete.svg" onClick="removeItem()">
-    </div>
-    <div class="check">
-  <button class="checkout" onClick="hideCart()">
-  Checkout
-</button>
-</div>
-  </div>
-  <div class="cart-empty" style="display:none">
-  <div class="pCart">
-    <p>Cart</p>
-  </div>
-    <div class="yourCart">
-      <p>Your cart is empty.</p>
-    </div>
-  </div>
-<img id="avatar" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/image-avatar.png">
- </div>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
       <li class="nav-item">
         <a class="nav-link" href="#">Collections</a>
@@ -89,12 +52,33 @@
 </nav>
 </div>
 
+   <div class="right-icons">
+    <div class="cart" id="cartbadge">
+  <button id="cartbutton">
+  <img id="cart" src="/Users/hannahallan/Downloads/ecommerce-product-page-main/images/icon-cart.svg">
+  <span class="badge" id="badge">4</span>
+</button>
 
- 
-<!-- Content -->
-
-<div class="flex-container">
-  <div class="cart-empty hide">
+<div class="cart-full" id="cartlist" style="display: none;">
+  <div class="pCart">
+    <p>Cart</p>
+  </div>
+    <div class="cartinfo-container">
+      <div class="cartdesc" id="cartbask" style="display:none;">
+      <img id="carttn" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/image-product-1-thumbnail.jpg">
+      <p id="autumn">Autumn Limited Edition...</p>
+      <div class="itmeprice"> $125.00 x <span class="num" id="cartnum">1</span>
+        <span class="total" id="carttotal">$125.00</span></div>
+      </div>
+      <img id="bin" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-delete.svg" onClick="removeItem()">
+    </div>
+    <div class="check">
+  <button class="checkout" onClick="hideCart()">
+  Checkout
+</button>
+</div>
+  </div>
+  <div class="cart-empty" id="carte">
   <div class="pCart">
     <p>Cart</p>
   </div>
@@ -102,24 +86,15 @@
       <p>Your cart is empty.</p>
     </div>
   </div>
+<img id="avatar" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/image-avatar.png">
+ </div>
 
-  <div class="cart-full hide">
-  <div class="pCart">
-    <p>Cart</p>
-  </div>
-    <div class="cartinfo-container">
-      <img id="carttn" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/image-product-1-thumbnail.jpg">
-      <p id="autumn">Autumn Limited Edition...</p>
-      <img id="bin" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-delete.svg">
-    </div>
-    <div class="check">
-  <button class="checkout">
-  <div class="pretext">
-  Checkout
-  </div>
-</button>
-</div>
-  </div>
+
+
+ 
+<!-- Content -->
+
+<div class="flex-container">
     <div id="content">
       <img id ="product" src="/Users/hannahallan/Documents/GitHub/Project-3/images/image-product-1.jpg"></div>
     <div id="info">

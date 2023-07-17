@@ -49,6 +49,16 @@
     border:none;
     background-color: transparent;
     cursor: pointer;
+    position: relative;
+    display: flex;
+
+}
+
+.icon-btn {
+    position: relative;
+  cursor: pointer;
+  background: none;
+  border: none;
 
 }
 
@@ -202,6 +212,7 @@ svg {
     border-radius: 10px;
     position: absolute;
     z-index: 2;
+    display: flex;
 }
 
 .cartbask{

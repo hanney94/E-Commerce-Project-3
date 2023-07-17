@@ -2,6 +2,13 @@
 
 const cartList = document.getElementById("cartlist");
 const cartbtn = document.getElementById("cartbutton");
+const preview = document.getElementById("pre");
+const lbpreview = document.getElementById("lbpre");
+const thumbnails = document.getElementsByClassName("thumbnails");
+const lbthumbnails = document.getElementsByClassName("lb-thumbnails");
+const closeLbBtn = document.getElementById("clb");
+const lb = document.getElementById("lb");
+const lbOpenBtn = document.getElementById("lb-open-btn");
 
 
 // counter
@@ -11,6 +18,9 @@ const minusBtn = document.getElementById("minus");
 const plusBtn = document.getElementById("plus");
 
 
+
+//cart
+
 const cartNumRender = document.getElementById("cartnum");
 const cartTotalRender = document.getElementById("carttotal");
 const addToCartBtn = document.getElementById("addcart");
@@ -19,7 +29,7 @@ let cartBadge = document.getElementById("badge");
 let isCartEmpty = true;
 let cartToggle = false;
 let isCartOpen = false;
-let cartFull = document.getElementById("cartbask");
+let cartFull = document.getElementById("cart-full");
 let cartEmpty = document.getElementById("carte");
 
 

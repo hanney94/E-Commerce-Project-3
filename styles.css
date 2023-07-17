@@ -15,11 +15,24 @@
     flex-wrap: wrap;
 }
 
+header {
+    padding: 0px;
+    z-index: 10;
+    top: 0;
+    position: relative;
+}
+
 
 
 #nav {
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px
+  padding: 1rem 10px;
 }
+
+
 
 
 .nav-item {
@@ -45,6 +58,33 @@
     width: 145px;
 }
 
+.right-icons {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  gap: 1rem;
+
+
+}
+.badge {
+      position: absolute;
+  border-radius: 50%;
+  background: #ff7d1a;
+  color: white;
+  min-width: 15px;
+  height: 20px;
+  width: 15px;
+  max-height: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: center;
+  font-weight: 700;
+  top: -5px;
+  right: -5px;
+}
+
 #cartbutton {
     border:none;
     background-color: transparent;
@@ -62,16 +102,42 @@
 
 }
 
+ .desc{
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: white;
+  z-index: 80;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+}
+
+#cart-empty {
+     min-width: 320px;
+  min-height: 100px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  font-weight: 700;
+}
+
 
 #avatar {
     width:1.9rem;
-    padding-left:10%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#avatar:hover {
+    border-color:#ff7d1a ;
 }
 
 #content {
     flex: 50%;
-    position: relative;
-    z-index: 1;
 }
 
 #product {
@@ -205,7 +271,7 @@ svg {
     margin-right: 10px;
 }
 
-#carte {
+.cart-empty{
     width: 350px;
     height: 250px;
     background-color:white;
@@ -231,13 +297,27 @@ svg {
     display: flex;
     width:50px;
     border-radius: 5px;
-    float: left;
+    
+}
+.description {
+    line-height: 1.5;
 }
 
 #autumn {
-
+    font-weight: 400;
     font-size: 15px;
-    color: #68707d;  
+    color: #68707d;
+    
+}
+
+.itemprice {
+    color: #b6bcc8;
+    font-weight: 400;
+}
+
+.total{
+    color: black;
+    font-weight: 700;
 }
 
 .bin {
@@ -248,13 +328,22 @@ svg {
 }
 
 .pCart {
-    color: black;
-    font-size: 15px;
-    font-weight: 700;
-    border-bottom: 1px solid #b6bcc8;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f7f8fd;
+  font-weight: 700;
+  color: black;
+}
+
+.items{
+    padding: 1.5rem;
+}
+
+.item {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 

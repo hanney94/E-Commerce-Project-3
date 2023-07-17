@@ -30,7 +30,7 @@ let isCartEmpty = true;
 let cartToggle = false;
 let isCartOpen = false;
 let cartFull = document.getElementById("cart-full");
-let cartEmpty = document.getElementById("carte");
+let cartEmpty = document.getElementById("cart-empty");
 
 
 const handleClickOutside = (e) => {
@@ -42,74 +42,71 @@ const handleClickOutside = (e) => {
 };
 
 const showCart = () => {
-	cartToggle = true;
-	cartList.style.display = "block";
-	window.addEventListener("click", handleClickOutside);
-}; 
+  cartToggle = true;
+  cartList.style.display = "block";
+  window.addEventListener("click", handleClickOutside);
+};
 
-const hideCart =() => {
-	cartToggle = false;
-	cartList.style.display = "none";
-}
+const hideCart = () => {
+  cartToggle = false;
+  cartList.style.display = "none";
+};
 
 const toggleCart = () => {
-
-	if (isCartOpen) {
-		hideCart();
-	}
-	else {
-		showCart();
-	}
-	isCartOpen = !isCartOpen;
+  if (isCartOpen) {
+    hideCart();
+  } else {
+    showCart();
+  }
+  isCartOpen = !isCartOpen;
 };
 
 cartbtn.addEventListener("click", (e) => {
-	e.stopPropagation();
-	toggleCart();
-	});
+  e.stopPropagation();
+  toggleCart();
+});
 
 addToCartBtn.addEventListener("click", (e) => {
-	if (count == 0){
-		return;
-	}
-	isCartEmpty = false;
-	showBadge();
-	updateCart();
-	e.stopPropagation();
-	showCart();
+  if (count == 0) {
+    return;
+  }
+  isCartEmpty = false;
+  showBadge();
+  updateCart();
+  e.stopPropagation();
+  showCart();
 });
 
 const removeItem = () => {
-	isCartEmpty = true;
-	count = 0;
-	counterRender.innerHTML = count.toString();
-	showBadge();
-	updateCart();
-	hideCart();
+  isCartEmpty = true;
+  //
+  count = 0;
+  counterRender.innerHTML = count.toString();
+  showBadge();
+  updateCart();
+  hideCart();
 };
 
 const showBadge = () => {
-	if (isCartEmpty == false) {
-		cartBadge.style.display="block";
-		cartBadge.innerHTML = count.toString();
-	}
-	else {
-		cartBadge.style.display = "none";
-	}
+  if (isCartEmpty == false) {
+    cartBadge.style.display = "block";
+    cartBadge.innerHTML = count.toString();
+  } else {
+    cartBadge.style.display = "none";
+  }
 };
-
 
 const updateCart = () => {
-	if (isCartEmpty == false){
-		cartFull.style.display="block";
-		cartBadge.style.display = "none";
-	} else {
-		cartFull.style.display ="none";
-		cartEmpty.style.display = "flex";
-	}
+  if (isCartEmpty == false) {
+    cartFull.style.display = "block";
+    cartEmpty.style.display = "none";
+  } else {
+    cartFull.style.display = "none";
+    cartEmpty.style.display = "flex";
+  }
 };
 
-showBadge ();
+showBadge();
 
 
 let count = 0;
@@ -117,7 +114,9 @@ plusBtn.addEventListener("click", () => {
 	count++;
 	counterRender.innerHTML= count.toString();
 	cartNumRender.innerHTML = count.toString();
-	cartTotalRender.innerHTML = '$${(125 * count).toFixed(2)}';
+
+	const totalCost = (125 * count).toFixed(2);
+	cartTotalRender.innerHTML = '$' + totalCost;
 });
 
 minusBtn.addEventListener("click", () => {
@@ -125,7 +124,9 @@ minusBtn.addEventListener("click", () => {
 	count--;
 	counterRender.innerHTML = count.toString();
 	cartNumRender.innerHTML = count.toString();
-	cartTotalRender.innerHTML = '$${(125 * count).toFixed(2)}';
+	
+	const totalCost = (125 * count).toFixed(2);
+	cartTotalRender.innerHTML = '$' + totalCost;
 });
 
 

@@ -33,6 +33,10 @@ header {
     font-weight: bold;
 }
 
+.nav-link:hover {
+    border-bottom: 3px solid #ff7d1a;
+}
+
 
 
 #logo {

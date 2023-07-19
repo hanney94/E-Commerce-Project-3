@@ -60,10 +60,11 @@ header {
     border-radius: 50%;
     cursor: pointer;
     margin-left: 10px;
+    border: 2px solid transparent;
 }
 
 #avatar:hover {
-    border-color:#ff7d1a ;
+    border: 2px solid #ff7d1a ;
 }
 
 

@@ -23,19 +23,17 @@
 <body>
   <header>
     <div id="nav">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white ">
-    <div class="container-fluid">
-  <button class="navbar-toggler border-0" id="ham-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+  <nav class="navbar navbar-expand-lg navbar-white fixed-top bg-white">
+  <button class="navbar-toggler border-0" id="ham-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <img src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/icon-menu.svg">
   </button>
-  <div class="ham-overlay" id="ho"></div>
-
-   <span class="navbar-brand me-auto"> <img id ="logo" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/logo.svg"></span>
-
-
-     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-      <li class="nav-item">
+  <span class="navbar-brand me-auto"> <img id ="logo" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/logo.svg"></span>
+  <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+    <div class="close">
+    <img id="close" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-close.svg" style="display:none;">
+</div>
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
         <a class="nav-link" href="#">Collections</a>
       </li>
       <li class="nav-item">
@@ -52,8 +50,11 @@
       </li>
     </ul>
   </div>
-</div>
-</nav>
+
+
+
+
+
  <div class="right-icons">
     <div class="cart" id="cartbadge">
   <button class="icon-btn" id="cartbutton">
@@ -62,7 +63,6 @@
 </button>
 <img id="avatar" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/image-avatar.png">
 </div>
-
 
 
 <div class="desc" id="cartlist" style="display: none;">

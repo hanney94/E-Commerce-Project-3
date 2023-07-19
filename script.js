@@ -129,43 +129,23 @@ minusBtn.addEventListener("click", () => {
 	cartTotalRender.innerHTML = '$' + totalCost;
 });
 
+$('[data-toggle="slide-collapse"]').on('click', function() {
+    $navMenuCont = $($(this).data('target'));
+    $navMenuCont.animate({'width':'toggle'}, 350);
+});
+
 
 /* Nav */
 
 
 function openNav() {
-  document.getElementById("nav-all").style.width = "250px";
-  document.getElementById("ho").style.display = "block";
+  document.getElementById("navbar-toggler ").style.width = "250px";
+  document.getElementById("navbar-nav").style.display = "block";
 }
 
 function closeNav() {
-  document.getElementById("nav-all").style.width = "0";
-  document.getElementById("ho").style.display = "none";
+  document.getElementById("navbar-toggler ").style.width = "0";
+  document.getElementById("navbar-nav").style.display = "none";
 }
-
-document.getElementById("ho").addEventListener("click", () => closeNav());
-
-/**
- * This appends the cart list to the preview  div
- * on mobile to aid in absolute center positioning
- *
-
-function appendCartList(x) {
-  let pbox = document.getElementById("pbox");
-  let headCart = document.getElementById("cartbadge");
-
-  if (x.matches) {
-    // If media query matches
-    pbox.appendChild(cartList);
-  } else {
-    headCart.appendChild(cartList);
-  }
-}
-
-let x = window.matchMedia("(max-width: 600px)");
-appendCartList(x);
-window.addEventListener("resize", function () {
-  appendCartList(x);
-});
 
 

@@ -28,6 +28,14 @@ header {
     padding: 3%;
 }
 
+li {
+    list-style-type:none;
+}
+
+.close {
+    margin-bottom: 30px;
+}
+
 .nav-link {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bold;
@@ -344,16 +352,30 @@ svg {
  }
 
 
-.navbar-collapse {
+
+
+
+@media screen and (min-width: 768px) {
+#product{
+    width: 450px;
+    height: 450px;
+    margin-left: 200px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-collapse {
         position: fixed;
-        top: 0px; /* adjust to height of navbar */
+        top: 0px;
         left: 0;
+        padding-top: 20px;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
-        width: 75%;
+        width: 50%;
         height: 100%;
-        background-color: white;
     }
 
     .navbar-collapse.collapsing {
@@ -369,16 +391,3 @@ svg {
     .navbar-toggler.collapsed ~ .navbar-collapse {
         transition: left 500ms ease-in-out;
     }
-}
-
-
-@media screen and (min-width: 768px) {
-#product{
-    width: 450px;
-    height: 450px;
-    margin-left: 200px;
-    margin-top: 100px;
-    border-radius: 15px;
-}
-}
-

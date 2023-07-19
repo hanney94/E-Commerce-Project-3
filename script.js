@@ -130,5 +130,42 @@ minusBtn.addEventListener("click", () => {
 });
 
 
+/* Nav */
+
+
+function openNav() {
+  document.getElementById("nav-all").style.width = "250px";
+  document.getElementById("ho").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("nav-all").style.width = "0";
+  document.getElementById("ho").style.display = "none";
+}
+
+document.getElementById("ho").addEventListener("click", () => closeNav());
+
+/**
+ * This appends the cart list to the preview  div
+ * on mobile to aid in absolute center positioning
+ *
+
+function appendCartList(x) {
+  let pbox = document.getElementById("pbox");
+  let headCart = document.getElementById("cartbadge");
+
+  if (x.matches) {
+    // If media query matches
+    pbox.appendChild(cartList);
+  } else {
+    headCart.appendChild(cartList);
+  }
+}
+
+let x = window.matchMedia("(max-width: 600px)");
+appendCartList(x);
+window.addEventListener("resize", function () {
+  appendCartList(x);
+});
 
 

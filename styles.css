@@ -86,9 +86,9 @@ li {
 
 /* Content */
 
-#content {
-    flex: 50%;
-}
+
+
+
 
 #product {
     
@@ -360,9 +360,8 @@ svg {
 
 @media screen and (min-width: 768px) {
 #product{
-    display: flex;
-    width: 450px;
-    height: 470px;
+    width: 420px;
+    height: 400px;
     margin-left: 150px;
     margin-top: 150px;
     border-radius: 15px;
@@ -389,9 +388,7 @@ body {
     border-bottom: 2px solid #f7f8fd;
 }
 
-#info {
-    float: right;
-}
+
 
 .icon-btn {
     margin-top: 10px;
@@ -403,10 +400,75 @@ body {
 }
 
 .desc {
-    top: 50%;
-  left: 90%;
+  top: 22%;
+  left: 89%;
   transform: translate(-50%, 20%);
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#content {
+    width: 50%;
+    height: 800px;
+    flex:50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#info { 
+    justify-content: center;
+    float: right;
+    width: 40px;
+    height: 800px;
+    flex: 50%;
+    padding-top: 200px;
+    padding-right: 240px;
+}
+
+#company {
+    font-size: 18px;
+}
+
+#para {
+    font-size: 16px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.price-container {
+ flex-direction: column;
+ justify-content: flex-start;
+}
+
+.score-container {
+    display: flex;
+justify-content: flex-start;
+}
+
+#qntyflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.add {
+    width:20px;
+}
+
+.myform {
+  width:30%;
+}
+
 }
 
 

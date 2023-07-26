@@ -90,13 +90,55 @@ li {
 
 
 
-#product {
-    
+.product {
+    display: none;
     width:100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 
+#mob-next {  
+  position: absolute;
+  top: 20%;
+  left: 86%;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#mob-prev {  
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button img {
+  height: 20px;
+  width: 15px;
+  border-radius: 50px;
+}
+
+#next {
+  right: 10px;
+}
+
+#prev {
+    left:10px;
+}
 #info { 
     flex: 50%;
     padding: 20px;
@@ -359,7 +401,8 @@ svg {
 
 
 @media screen and (min-width: 768px) {
-#product{
+.product{
+    display: block;
     width: 420px;
     height: 400px;
     margin-left: 150px;
@@ -406,32 +449,71 @@ body {
 }
 
 .flex-container {
+    margin-top: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height:100%;
-    align-items: center;
-    flex-wrap: wrap;
+  
 }
 
-#content {
+.section {
     width: 50%;
-    height: 800px;
-    flex:50%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 
-#info { 
-    justify-content: center;
-    float: right;
-    width: 40px;
-    height: 800px;
-    flex: 50%;
-    padding-top: 200px;
-    padding-right: 240px;
+.preview-section {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  height: fit-content;
 }
+
+.info-section {
+    display: flex;
+    padding: 5rem;
+
+}
+
+.controls button {
+  position: absolute;
+  top: 45%;
+  left:12%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button img {
+  height: 20px;
+  width: 15px;
+  border-radius: 50px;
+}
+
+#next {
+  right: -20px;
+}
+
+#prev {
+    left:-20px;
+}
+
+//*
+
+.thumbnails {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.6s ease;
+}
+
+*//
+
+
+
 
 #company {
     font-size: 18px;
@@ -469,7 +551,9 @@ justify-content: flex-start;
   width:30%;
 }
 
-}
+
+
+
 
 
 

@@ -129,26 +129,9 @@ minusBtn.addEventListener("click", () => {
 	cartTotalRender.innerHTML = '$' + totalCost;
 });
 
-$('[data-toggle="slide-collapse"]').on('click', function() {
-    $navMenuCont = $($(this).data('target'));
-    $navMenuCont.animate({'width':'toggle'}, 350);
-});
 
 
-/* Nav */
 
-
-function openNav() {
-  document.getElementById("navbar-toggler ").style.width = "250px";
-  document.getElementById("navbar-nav").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("navbar-toggler ").style.width = "0";
-  document.getElementById("navbar-nav").style.display = "none";
-}
-
-/* Images Slideshow */
 
 
 let slideIndex = 1
@@ -172,4 +155,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   
 }
+
+
+
+
+
 

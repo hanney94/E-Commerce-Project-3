@@ -28,6 +28,20 @@ header {
     padding: 3%;
 }
 
+.navbar-collapse {
+  position: fixed;
+  top:0;
+  left:0px;
+  width:250px;
+  height: 100%;
+  transition: height 0s ease;
+}
+
+.navbar-nav {
+    padding-left: 10px;
+    color: black;
+}
+
 
 li {
     list-style-type:none;
@@ -41,7 +55,7 @@ li {
 .nav-link {
     font-size: 15px;
     font-family: 'Kumbh Sans', sans-serif;
-    color: #b6bcc8;
+    color: black;
 }
 
 .nav-link:hover {
@@ -99,7 +113,7 @@ li {
 
 #mob-next {  
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 86%;
   border-radius: 50%;
   width: 35px;
@@ -114,7 +128,7 @@ li {
 
 #mob-prev {  
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 5%;
   border-radius: 50%;
   width: 35px;
@@ -400,6 +414,9 @@ svg {
 
 
 
+
+
+
 @media screen and (min-width: 768px) {
 .product{
     display: block;
@@ -473,24 +490,8 @@ body {
 
 }
 
-.controls button {
-  position: absolute;
-  top: 45%;
-  left:12%;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.controls button img {
-  height: 20px;
-  width: 15px;
-  border-radius: 50px;
+.controls  {
+  display: none;
 }
 
 #next {
@@ -500,18 +501,6 @@ body {
 #prev {
     left:-20px;
 }
-
-//*
-
-.thumbnails {
-    display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background-color 0.6s ease;
-}
-
-*//
-
 
 
 
@@ -551,35 +540,19 @@ justify-content: flex-start;
   width:30%;
 }
 
+.navbar-collapse {
+    display:block;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #b6bcc8;
+}
 
 
 
 
 
 
-@media screen and (max-width: 992px) {
-    .navbar-collapse {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        padding-top: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 50%;
-        height: 100%;
-    }
 
-    .navbar-collapse.collapsing {
-        left: -75%;
-        transition: height 0s ease;
-    }
-
-    .navbar-collapse.show {
-        left: 0;
-        transition: left 300ms ease-in-out;
-    }
-
-    .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
-    }

@@ -159,5 +159,44 @@ function showSlides(n) {
 
 
 
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndexes = 1;
+showSlides(slideIndexes);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndexes += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndexes = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndexes = 1}
+  if (n < 1) {slideIndexes = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  
+  }
+  slides[slideIndexes-1].style.display = "block";
+  
+}
+
+
+
+
 
 

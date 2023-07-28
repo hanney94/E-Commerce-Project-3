@@ -28,14 +28,7 @@ header {
     padding: 3%;
 }
 
-.navbar-collapse {
-  position: fixed;
-  top:0;
-  left:0px;
-  width:250px;
-  height: 100%;
-  transition: height 0s ease;
-}
+
 
 .navbar-nav {
     padding-left: 10px;
@@ -417,6 +410,7 @@ svg {
 
 
 
+
 @media screen and (min-width: 768px) {
 .product{
     display: block;
@@ -550,8 +544,125 @@ justify-content: flex-start;
     color: #b6bcc8;
 }
 
+.row> .column {
+    padding: 0.8px;
+}
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.column {
+    float:left;
+    width:25%;
+}
+
+.modal {
+     display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  opacity: 75%;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  background-color: hsl(0, 0%, 0%);
+
+}
+
+.close {
+    color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.mySlides {
+    display: none;
+
+}
+
+.prev,
+.next {
+  border-radius: 50px;
+ cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.product{
+    display: none;
+}
+
+.lb-product {
+
+    width: 420px;
+    height: 400px;
+    margin-left: 150px;
+    margin-top: 150px;
+    border-radius: 15px;
+}
+
+.lb-slides {
+     width: 420px;
+    height: 400px;
+
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   margin-left: 127px;
+
+}
+
+.thumbs {
+    width: 90px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.thumbs:hover {
+    cursor: pointer;
+}
+
+.thumbs:active {
+    cursor: pointer;
+    border: 5px solid orange;
+    opacity: 25%;
+}
 
 
 

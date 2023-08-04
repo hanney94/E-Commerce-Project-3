@@ -132,6 +132,27 @@ minusBtn.addEventListener("click", () => {
 
 
 
+   var mainImg = document.getElementById('mainImg');
+
+        document.getElementById('thumb1').onclick = function() {
+                mainImg.src = './images/image-product-1.jpg';
+                
+        };
+        document.getElementById('thumb2').onclick = function() {
+                mainImg.src = './images/image-product-2.jpg';
+            
+        };
+        document.getElementById('thumb3').onclick = function() {
+                mainImg.src = './images/image-product-3.jpg';
+               
+        };
+        document.getElementById('thumb4').onclick = function() {
+                mainImg.src = './images/image-product-4.jpg';
+              
+        };
+
+
+
 
 
 

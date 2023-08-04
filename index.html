@@ -25,7 +25,7 @@
     <div class="nav">
   <nav class="navbar">
     <button class="toggle">
-    <img src="./images/icon-menu.svg" onclick="openDropdown()">
+    <img src="./Images/icon-menu.svg" onclick="openDropdown()">
   </button>
     <div class ="nav-logo">
     <img src="./Images/logo.svg">
@@ -50,7 +50,7 @@
   </nav>
  <div class = "dropdown">
      <button class="close">
-    <img src="./images/icon-close.svg" onclick="closeDropdown()">
+    <img src="./Images/icon-close.svg" onclick="closeDropdown()">
   </button>
     <li class="nav-item">
         <a class="nav-link" href="#">Collections</a>
@@ -129,18 +129,18 @@
      
 <!-- Product Image -->
 
-    <div class="row">
+     <div class="row">
       <div class="column">
         <div class="large">
-        <img src="./images/image-product-1.jpg" onclick="openModal();currentSlide(1)" class ="lb-product">
+        <img src="./Images/image-product-1.jpg" onclick="openModal();currentSlide(1)" class ="lb-product" id="mainImg">
       </div>
        </div>
      </div>
      <div class="thumbnails">
-      <img class="thumbs" src="./Images/image-product-1-thumbnail.jpg" onclick="changeImage()">
-      <img class="thumbs" src="./Images/image-product-2-thumbnail.jpg" onclick="changeImage()">
-      <img class="thumbs" src="./Images/image-product-3-thumbnail.jpg" onclick="changeImage()">
-      <img class="thumbs" src="./Images/image-product-4-thumbnail.jpg" onclick="changeImage()">
+      <img class="thumbs" id="thumb1" src="./Images/image-product-1-thumbnail.jpg" >
+      <img class="thumbs" id="thumb2"src="./Images/image-product-2-thumbnail.jpg">
+      <img class="thumbs" id="thumb3"src="./Images/image-product-3-thumbnail.jpg">
+      <img class="thumbs" id="thumb4" src="./Images/image-product-4-thumbnail.jpg">
     </div>
   </section>
 

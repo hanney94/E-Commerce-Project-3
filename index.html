@@ -127,22 +127,34 @@
               </button>
             </div>
      
+<!-- Product Image -->
+
     <div class="row">
       <div class="column">
+        <div class="large">
         <img src="./images/image-product-1.jpg" onclick="openModal();currentSlide(1)" class ="lb-product">
+      </div>
        </div>
      </div>
      <div class="thumbnails">
-      <img class="thumbs" src="./images/image-product-1-thumbnail.jpg" onclick="changeImage()">
-      <img class="thumbs" src="./images/image-product-2-thumbnail.jpg" onclick="changeImage()">
-      <img class="thumbs" src="./images/image-product-3-thumbnail.jpg" onclick="changeImage()">
-      <img class="thumbs" src="./images/image-product-4-thumbnail.jpg" onclick="changeImage()">
+      <img class="thumbs" src="./Images/image-product-1-thumbnail.jpg" onclick="changeImage()">
+      <img class="thumbs" src="./Images/image-product-2-thumbnail.jpg" onclick="changeImage()">
+      <img class="thumbs" src="./Images/image-product-3-thumbnail.jpg" onclick="changeImage()">
+      <img class="thumbs" src="./Images/image-product-4-thumbnail.jpg" onclick="changeImage()">
     </div>
+  </section>
 
-     <div id = "myModal" class="modal">
-      <span class="close-cursor" onclick="closeModal()"><img src="./images/icon-close.svg"></span>
 
+
+
+
+
+  <!-- Lightbox -->
+
+<div id = "myModal" class="modal">
       <div class="modal-content">
+        <span class="close-cursor" onclick="closeModal()">
+        <img src="./images/icon-close.svg" class="closeorange"></span>
         <div class="mySlides">
           <img class="lb-slides" src="./images/image-product-1.jpg">
         </div>
@@ -166,6 +178,8 @@
                 <img src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-previous.svg" alt="" />
               </button>
 
+
+<div class="lb-thumbs">
     <div class="column">
       <img class="demo" src="./images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)" alt="Nature">
     </div>
@@ -183,10 +197,11 @@
     </div>
   </div>
 </div>
+</div>
         
-          </section>
 
 
+<!-- Info -->
 
 <section class="info-section">
     <div id="info">

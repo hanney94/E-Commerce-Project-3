@@ -130,6 +130,13 @@ minusBtn.addEventListener("click", () => {
 });
 
 
+
+
+
+
+
+
+
 //slideshow
 
 var slider_img = document.querySelector('.lb-product');

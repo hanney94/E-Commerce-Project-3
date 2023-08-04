@@ -22,17 +22,15 @@
   <!-- Navbar -->
 <body>
   <header>
-    <div id="nav">
-  <nav class="navbar navbar-expand-lg navbar-white fixed-top bg-white">
-  <button class="navbar-toggler border-0" id="ham-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <img src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/icon-menu.svg">
+    <div class="nav">
+  <nav class="navbar">
+    <button class="toggle">
+    <img src="./images/icon-menu.svg" onclick="openDropdown()">
   </button>
-  <span class="navbar-brand me-auto"> <img id ="logo" src="./Images/logo.svg"></span>
-  <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-    <button class="close border-0" id="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <img id="close" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-close.svg" >
-  </button>
-    <ul class="navbar-nav mr-auto">
+    <div class ="nav-logo">
+    <img src="./Images/logo.svg">
+  </div>
+    <ul class="navbar-items">
      <li class="nav-item">
         <a class="nav-link" href="#">Collections</a>
       </li>
@@ -49,13 +47,30 @@
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
-  </div>
+  </nav>
+ <div class = "dropdown">
+     <button class="close">
+    <img src="./images/icon-close.svg" onclick="closeDropdown()">
+  </button>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Collections</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Men</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Women</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link " href="#">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </div>
 
 
-
-
-
- <div class="right-icons">
+<div class="right-icons">
     <div class="cart" id="cartbadge">
   <button class="icon-btn" id="cartbutton">
   <img id="cart" src="/Users/hannahallan/Downloads/ecommerce-product-page-main/images/icon-cart.svg">
@@ -63,6 +78,9 @@
 </button>
 <img id="avatar" src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/Images/image-avatar.png">
 </div>
+</div>
+
+
 
 
 <div class="desc" id="cartlist" style="display: none;">
@@ -100,13 +118,15 @@
 <div class="flex-container">
   <section class="preview-section">
     <div id="content">
-      <div class="preview">
-      <img class ="product" src="./images/image-product-1.jpg">
-       <img class="product" src="./images/image-product-2.jpg"  alt="" />
-      <img class="product" src="./images/image-product-3.jpg"  alt="" />
-      <img class="product" src="./images/image-product-4.jpg" alt="" />
-    </div>
-
+       <div class="controls" id="mob-cntrl">
+              <button id="mob-next" onClick="mobnext()">
+                <img src="./images/icon-next.svg" alt="" />
+              </button>
+              <button id="mob-prev" onClick="mobprev()">
+                <img src="./images/icon-previous.svg" alt="" />
+              </button>
+            </div>
+     
     <div class="row">
       <div class="column">
         <img src="./images/image-product-1.jpg" onclick="openModal();currentSlide(1)" class ="lb-product">
@@ -117,6 +137,7 @@
       <img class="thumbs" src="./images/image-product-2-thumbnail.jpg" onclick="changeImage()">
       <img class="thumbs" src="./images/image-product-3-thumbnail.jpg" onclick="changeImage()">
       <img class="thumbs" src="./images/image-product-4-thumbnail.jpg" onclick="changeImage()">
+    </div>
 
      <div id = "myModal" class="modal">
       <span class="close-cursor" onclick="closeModal()"><img src="./images/icon-close.svg"></span>
@@ -163,21 +184,6 @@
   </div>
 </div>
         
-
-
-
-    <div class="controls" id="mob-cntrl">
-              <button id="mob-next" onClick="plusSlides(1)">
-                <img src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-next.svg" alt="" />
-              </button>
-              <button id="mob-prev" onClick="plusSlides(-1)">
-                <img src="/Users/hannahallan/Documents/E-Commerce Project 3/E-Commerce-Project/images/icon-previous.svg" alt="" />
-              </button>
-            </div>
-     
-          
-
-
           </section>
 
 

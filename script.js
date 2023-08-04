@@ -130,40 +130,38 @@ minusBtn.addEventListener("click", () => {
 });
 
 
+//slideshow
 
+var slider_img = document.querySelector('.lb-product');
+var images = ['image-product-1.jpg', 'image-product-2.jpg','image-product-3.jpg','image-product-4.jpg'];
+var i =0;
 
+function mobprev() {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImg()
 
-
-let slideIndex = 1
-showSlides(slideIndex)
-
-
-function plusSlides(n){
-	showSlides(slideIndex += n);
 }
 
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("product");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-  
-  slides[slideIndex-1].style.display = "block"; 
+function mobnext() {
+  if(i >= images.length - 1) i= -1;
+  i++;
+  return setImg()
   
 }
 
+function setImg() {
+  return slider_img.setAttribute('src', 'images/' + images[i]);
+}
 
 
+//lightbox
 
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
-// Close the Modal
+
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
@@ -171,7 +169,7 @@ function closeModal() {
 var slideIndexes = 1;
 showSlides(slideIndexes);
 
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndexes += n);
 }
@@ -194,6 +192,20 @@ function showSlides(n) {
   slides[slideIndexes-1].style.display = "block";
   
 }
+
+
+//nav sidebar
+
+
+function openDropdown() {
+  document.querySelector(".dropdown").style.display = "block";
+}
+
+function closeDropdown() {
+ document.querySelector(".dropdown").style.display = "none";
+}
+
+
 
 
 

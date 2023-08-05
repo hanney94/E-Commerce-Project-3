@@ -735,11 +735,13 @@ margin-left: 20px;
 
 .thumbs:hover {
     cursor: pointer;
+    border: 3px solid orange;
+    opacity: 25%;
 }
 
 .thumbs:active {
     cursor: pointer;
-    border: 5px solid orange;
+    border: 3px solid orange;
     opacity: 25%;
 }
 

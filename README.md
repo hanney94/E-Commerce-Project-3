@@ -51,8 +51,8 @@ I would like to work on my Javascript code as well as improving the responsivene
 
 ### Useful resources
 
-Google Fonts : https://fonts.google.com
-Youtube : Various Different Accounts
+- Google Fonts : https://fonts.google.com
+- Youtube : Various Different Accounts
 
 
 

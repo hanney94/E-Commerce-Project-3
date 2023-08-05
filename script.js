@@ -135,19 +135,19 @@ minusBtn.addEventListener("click", () => {
    var mainImg = document.getElementById('mainImg');
 
         document.getElementById('thumb1').onclick = function() {
-                mainImg.src = './images/image-product-1.jpg';
+                mainImg.src = './Images/image-product-1.jpg';
                 
         };
         document.getElementById('thumb2').onclick = function() {
-                mainImg.src = './images/image-product-2.jpg';
+                mainImg.src = './Images/image-product-2.jpg';
             
         };
         document.getElementById('thumb3').onclick = function() {
-                mainImg.src = './images/image-product-3.jpg';
+                mainImg.src = './Images/image-product-3.jpg';
                
         };
         document.getElementById('thumb4').onclick = function() {
-                mainImg.src = './images/image-product-4.jpg';
+                mainImg.src = './Images/image-product-4.jpg';
               
         };
 
@@ -161,7 +161,7 @@ minusBtn.addEventListener("click", () => {
 //slideshow
 
 var slider_img = document.querySelector('.lb-product');
-var images = ['image-product-1.jpg', 'image-product-2.jpg','image-product-3.jpg','image-product-4.jpg'];
+var images = ['./Images/image-product-1.jpg', './Images/image-product-2.jpg','./Images/image-product-3.jpg','./Images/image-product-4.jpg'];
 var i =0;
 
 function mobprev() {

@@ -161,7 +161,7 @@ minusBtn.addEventListener("click", () => {
 //slideshow
 
 var slider_img = document.querySelector('.lb-product');
-var images = ['./Images/image-product-1.jpg', './Images/image-product-2.jpg','./Images/image-product-3.jpg','./Images/image-product-4.jpg'];
+var images = ['image-product-1.jpg', 'image-product-2.jpg','image-product-3.jpg','image-product-4.jpg'];
 var i =0;
 
 function mobprev() {
@@ -179,7 +179,7 @@ function mobnext() {
 }
 
 function setImg() {
-  return slider_img.setAttribute('src', 'images/' + images[i]);
+  return slider_img.setAttribute('src', 'Images/' + images[i]);
 }
 
 
